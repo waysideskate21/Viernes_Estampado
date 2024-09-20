@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitei;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #373339;
+    position: sticky;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #ccc;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border left: ;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items:baseline;
+    transition: color 0.3s;
+}
+
+.icons a:hover {
+    color: #f0f0f0;
+}
+
+.icons a i {
+    margin-right: 5px;
+}
+
+.icon_placeholder::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 550;
+    content: "\f007";
+
+}
+
+
+
+
+.icons i.fa-user,.icons i.fa-cart-shopping,
+.icons i.fas.fa-truck {
+    font-size: 20px;
+}
+
+.fa-cart-shopping,.fa-truck {
+    border-left: 1px solid #ccc;
+
+}
+
