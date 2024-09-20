@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: whitei;
-    color: white;
+    background-color: #FFFFFF;
 }
 
 header {
@@ -48,6 +49,7 @@ nav ul li a:hover {
 
 .search-bar {
     position: relative;
+
 }
 
 .search-bar input {
@@ -61,13 +63,13 @@ nav ul li a:hover {
 
 .search-bar input::placeholder {
     color: #ccc;
+
 }
 
 .icons {
     display: flex;
     align-items: center;
     gap: 25px;
-    border left: ;
 }
 
 .icons a {
@@ -95,16 +97,64 @@ nav ul li a:hover {
 
 }
 
-
-
-
 .icons i.fa-user,.icons i.fa-cart-shopping,
 .icons i.fas.fa-truck {
     font-size: 20px;
 }
 
-.fa-cart-shopping,.fa-truck {
-    border-left: 1px solid #ccc;
+.slider{
+    overflow:hidden;
+    height: 500px;
+    position: relative;
+    padding: 40px 0px 0px 0px;
+}
 
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    align-items: center;
+    filter: blur(2px);
+}
+
+
+.slider--inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+}
+
+
+.Featured_section {
+    padding: 50px 0px 50px 0px;
+}
+
+.Featured_text {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 0px 0px 50px 0px;
+}
+.Featured_section h1 {
+    display: flex;
+    width: 35%;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.price_box ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+.price_box img {
+    width: 250px;
+    height: 300px;
+    
 }
 
