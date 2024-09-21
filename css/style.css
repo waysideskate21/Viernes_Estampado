@@ -158,3 +158,75 @@ nav ul li a:hover {
     
 }
 
+.price_box ul li {
+    border: 2px solid black;
+}
+
+
+ footer{
+    background: #373339;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid blue;
+    justify-content: space-around;
+
+}
+
+footer ul {
+    justify-content: space-around;
+
+
+
+}
+footer ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+} 
+
+#CIM {
+    font-size: 18px;
+    justify-content: space-between;
+    text-size-adjust: 22px;
+    gap: 15px;
+}
+
+#CIM a {
+    color: #171515;
+    text-decoration: none;
+
+}
+
+
+#carouselExampleSlidesOnly {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.carousel-item img {
+    border: none;
+    box-shadow: none;
+    max-width: 70%;
+    object-fit: cover; 
+    max-height: 780px; 
+    margin: auto; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #121212;
+    border-color: #000000;
+}
+
+.payments_metods img {
+    width: 40px;
+    height: 40px;
+}
+
+
