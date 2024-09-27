@@ -129,40 +129,104 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="space_footer">
-            <ul>
-                <h1>Columna de Informacion</h1>
-                <li class="footer_information">Derechos</li>
-                <li class="footer_information">Derechos</li>
-                <li class="footer_information">Derechos</li>
-                <li class="footer_information">Derechos</li>
-            </ul>
-        </div>
-        <div class="space_footer">
+    <body>
 
-            <ul>
-                <h1>Redes Sociales y Direcciones</h1>
-                <li class="social_networks">Facebook</li>
-                <li class="social_networks">Instagram</li>
-                <li class="social_networks">Whatsapp</li>
-                <li class="social_networks">Twitter</li>
-            </ul>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .footer {
+                background-color: #2f2b30;
+                color: #fff;
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                
+                bottom: 0;
+                width: 100%;
+            }
+    
+            .footer-column {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+    
+            .footer-column h3 {
+                margin: 0;
+                font-size: 16px;
+            }
+    
+            .footer-column p {
+                margin: 0;
+                font-size: 14px;
+            }
+    
+            .secure-methods input {
+                padding: 8px;
+                margin-right: 5px;
+                border: none;
+                border-radius: 5px;
+            }
+    
+            .secure-methods button {
+                padding: 8px;
+                background-color: #6b6469;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+            }
+    
+            .boxes {
+                display: flex;
+                gap: 10px;
+            }
+    
+            .box {
+                width: 40px;
+                height: 40px;
+                background: repeating-linear-gradient(
+                    45deg,
+                    #000,
+                    #000 10px,
+                    #fff 10px,
+                    #fff 20px
+                );
+            }
+        </style>
 
-        </div>
-        <div class="space_footer">
-            <ul>
-                <h1>Correo</h1>
-                <input type="email">
+        <div class="footer">
+            <div class="footer-column">
+                <h3>Columna de Información</h3>
+                <p>-----</p>
+                <p>-----</p>
+                <p>-----</p>
+                <p>-----</p>
+            </div>
+            <div class="footer-column">
+                <h3>Redes Sociales y Direcciones</h3>
+                <p>-----</p>
+                <p>-----</p>
+                <p>-----</p>
+                <p>-----</p>
+            </div>
+            <div class="footer-column secure-methods">
+                <h3>Correo y métodos seguros</h3>
+                <input type="email" placeholder="Tu correo">
                 <button>&gt;</button>
-                <li class="payments_metods"><img src="../assets/paypal.png" alt=""></li>
-                <li class="payments_metods"></li>
-                <li class="payments_metods"></li>
-                <li class="payments_metods"></li>
-            </ul>
+                <div class="boxes">
+                    <img src="../assets/paypal.png" alt="metodo1">
+                    <img src="../assets/pse_logo.webp" alt="metodo2">
+                    <img src="../assets/pngwing.com (1).png" id="tercer-metodo"  alt="metodo3">
+                    <img src="../assets/davivienda 2.png" id="cuarto-metodo" alt="metodo">
+                </div>
+            </div>
         </div>
-
-    </footer>
+    </body>
     <script src="../js/script.js"></script>
 </body>
 
