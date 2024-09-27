@@ -1,12 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Personalización de camisas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <title>Personalización de Camisas - IKAREM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/bb6e632b7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../assets/Logo.png" alt="Logo Ikarem"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Categoría 1</a></li>
+                <li><a href="#">Categoría 2</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text"  placeholder="Buscar">
+            <i class="fa fa-search"></i>
+
+        </div>
+        
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fas fa-user"></i> Iniciar Sesión</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fas fa-truck"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="container mt-5">
+            <h1>Personaliza tu Camisa</h1>
+            <form action="procesar_personalizacion.php" method="post">
+                <!-- Selección de talla -->
+                <div class="mopciones">
+                    <label for="talla" class="cosas">Selecciona la talla:</label>
+                    <select class="form-select" id="talla" name="talla" required>
+                        <option value="" selected disabled>Elige una opción</option>
+                        <option value="S">S - Pequeña</option>
+                        <option value="M">M - Mediana</option>
+                        <option value="L">L - Grande</option>
+                        <option value="XL">XL - Extra Grande</option>
+                    </select>
+                </div>
+
+                <!-- Selección de diseño -->
+                <div class="mopciones">
+                    <label for="diseno" class="cosas">Selecciona un diseño:</label>
+                    <select class="form-select" id="diseno" name="diseno" required>
+                        <option value="" selected disabled>Elige una opción</option>
+                        <option value="diseno1">Diseño 1</option>
+                        <option value="diseno2">Diseño 2</option>
+                        <option value="diseno3">Diseño 3</option>
+                        <option value="diseno_prop">Diseño Personalizado</option>
+                    </select>
+                </div>
+
+                <!-- Selección de material -->
+                <div class="mopciones">
+                    <label for="material" class="cosas">Selecciona el material:</label>
+                    <select class="form-select" id="material" name="material" required>
+                        <option value="" selected disabled>Elige una opción</option>
+                        <option value="algodon">Algodón</option>
+                        <option value="poliester">Poliéster</option>
+                        <option value="mezcla">Mezcla de Algodón y Poliéster</option>
+                    </select>
+                </div>
+
+                <!-- Botón para enviar -->
+                <button type="submit" class="btn btn-primary">Enviar Personalización</button>
+            </form>
+        </section>
+    </main>
+
+    </footer>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #2f2b30;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            position:fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-column h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .footer-column p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .secure-methods input {
+            padding: 8px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .secure-methods button {
+            padding: 8px;
+            background-color: #6b6469;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 10px;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+            background: repeating-linear-gradient(
+                45deg,
+                #000,
+                #000 10px,
+                #fff 10px,
+                #fff 20px
+            );
+        }
+    </style>
 </head>
 <body>
-    <h1>Personalizacion</h1>
-    
+
+    <div class="footer">
+        <div class="footer-column">
+            <h3>Columna de Información</h3>
+            <p>-----</p>
+            <p>-----</p>
+            <p>-----</p>
+            <p>-----</p>
+        </div>
+        <div class="footer-column">
+            <h3>Redes Sociales y Direcciones</h3>
+            <p>-----</p>
+            <p>-----</p>
+            <p>-----</p>
+            <p>-----</p>
+        </div>
+        <div class="footer-column secure-methods">
+            <h3>Correo y métodos seguros</h3>
+            <input type="email" placeholder="Tu correo">
+            <button>&gt;</button>
+            <div class="boxes">
+                <img src="../assets/paypal.png" alt="metodo1">
+                <img src="../assets/pse_logo.webp" alt="metodo2">
+                <img src="../assets/pngwing.com (1).png" id="tercer-metodo"  alt="metodo3">
+                <img src="../assets/davivienda 2.png" id="cuarto-metodo" alt="metodo">
+        </div>
+    </div>
 </body>
+
 </html>
